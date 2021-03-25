@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          eliq e bokluk <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let name ="vsicki sme bokluci"
+let list1 =["rado","eliq","steliyan","alex"]
+class App extends React.Component {
+  // когато е вътре в class  е метод 
+  render() { 
+    return (<div>
+    <h1 style={{backgroundColor:"Tomato"}}>Hello World</h1>
+    {name}
+    {list1.map(item =><li>{item + " e pulen bokluk"}</li>)}
+
+    </div> )
+    // return (<h1 style="background-color:DodgerBlue;">Hello World</h1>)
+
+  }   
 }
 
-export default App;
+export default App
