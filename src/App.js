@@ -2,6 +2,8 @@ import React from "react"
 
 let name ="vsicki sme bokluci"
 let list1 =["rado","eliq","steliyan","alex"]
+let name1="rado ne chisti nishto v kvartirata"
+let list2=["kuhnq","koridor","banq","toaletna","staq"]
 class App extends React.Component {
   // когато е вътре в class  е метод 
   render() { 
